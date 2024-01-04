@@ -27,5 +27,6 @@ public class Permutation {
         String str = sc.nextLine();
         System.out.println("");
         generateAllPermutationsByRecursion(str, 0, str.length() - 1);
+        sc.close();
     }
 }
