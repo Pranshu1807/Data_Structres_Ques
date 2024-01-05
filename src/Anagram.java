@@ -9,7 +9,7 @@ public class Anagram {
             return false;
         Map<Character, Integer> FreqOfString1 = new HashMap<>();
         for (int i = 0; i < str1.length(); i++) {
-            FreqOfString1.put(str1.charAt(i), FreqOfString1.getOrDefault(str1, 0) + 1);
+            FreqOfString1.put(str1.charAt(i), FreqOfString1.getOrDefault(str1.charAt(i), 0) + 1);
         }
         for (int i = 0; i < str2.length(); i++) {
             if (FreqOfString1.get(str2.charAt(i)) == 0)
